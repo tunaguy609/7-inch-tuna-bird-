@@ -1,0 +1,11 @@
+include <Bird_Nose.scad>;
+
+//////////////////////////////////////////////////////
+// Export: Nose Right Half (for 3D printing)
+//////////////////////////////////////////////////////
+
+difference(){
+    nose_right();
+    bearing_pocket();
+    shaft_bore();
+}
