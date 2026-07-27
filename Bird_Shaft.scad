@@ -24,11 +24,11 @@ module shaft_with_bearing_seat(){
         shaft();
 
         // Bearing seat at front
-        translate([0, 0, shaft_length-bearing_depth])
+        translate([0, 0, shaft_length-shaft_shoulder_thickness])
 
         cylinder(
             d=bearing_diameter,
-            h=bearing_depth,
+            h=shaft_shoulder_thickness,
             center=false);
 
     }

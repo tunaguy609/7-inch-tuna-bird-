@@ -33,10 +33,11 @@ wall = 2.8;
 
 shaft_diameter = 4.0;
 bearing_diameter = 6.0;
+shaft_shoulder_thickness = 5.0;
 
 shaft_length = 150;
 
-shaft_clearance = 0.20;
+shaft_clearance = 0.10;
 
 //----------------------------
 // Hardware
