@@ -18,6 +18,8 @@ max_diameter   = 50.8;
 front_diameter = 43.688; // 1.72"
 tail_diameter  = 7.112;  // 0.28"
 nose_tip       = 8.0;
+nose_cone_length = 17.78;       // 0.70"
+nose_cone_base_diameter = 24.13; // 0.95"
 
 //----------------------------
 // Wall Thickness
@@ -107,3 +109,10 @@ split = 0;
 //----------------------------
 
 fit = 0.20;
+
+//----------------------------
+// Retaining Collar
+//----------------------------
+
+collar_length = 6.0;
+collar_wall = 2.0;

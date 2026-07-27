@@ -12,13 +12,32 @@ module nose_profile(){
         translate([0,0,0])
             sphere(d = nose_tip);
 
-        // Mid section
-        translate([18,0,0])
-            sphere(d = 30);
+        // Front cone base
+        translate([nose_cone_length,0,0])
+            sphere(d = nose_cone_base_diameter);
 
         // Rear
         translate([nose_length,0,0])
             sphere(d = max_diameter);
+
+    }
+
+}
+
+module retaining_collar(){
+
+    difference(){
+
+        cylinder(
+            d=nose_cone_base_diameter + (collar_wall*2),
+            h=collar_length,
+            center=false);
+
+        translate([0,0,-1])
+            cylinder(
+                d=nose_cone_base_diameter + fit,
+                h=collar_length+2,
+                center=false);
 
     }
 

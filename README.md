@@ -15,7 +15,7 @@ This is a **modular, parametric 3D model** of a 7" spinning trolling bird lure t
 **Total Assembly Size**: 177.8mm long × 50.8mm diameter
 
 **Main Components**:
-1. Spinning nose (2 halves) - rotating blade section
+1. Spinning nose (left + right + retaining collar) - rotating blade section
 2. Main body (2 halves) - hydrodynamic shape with internal ribs
 3. Rotor assembly - spinning element
 4. Shaft - central drive element
@@ -26,7 +26,7 @@ This is a **modular, parametric 3D model** of a 7" spinning trolling bird lure t
 ✅ **Modular Design** - Print parts separately, assemble after  
 ✅ **Split Construction** - Easier printing and assembly  
 ✅ **Internal Structure** - Screw bosses, alignment pins, ribs  
-✅ **Ready to Export** - 6 dedicated export files for STL  
+✅ **Ready to Export** - 7 dedicated export files for STL  
 ✅ **Complete Documentation** - Printing & assembly guides included  
 
 ## Files Overview
@@ -45,6 +45,7 @@ This is a **modular, parametric 3D model** of a 7" spinning trolling bird lure t
 ### Export Files (→ Use These for STL)
 - **export_nose_left.scad** → `trolling_bird_nose_left.stl`
 - **export_nose_right.scad** → `trolling_bird_nose_right.stl`
+- **export_retaining_collar.scad** → `trolling_bird_retaining_collar.stl`
 - **export_body_left.scad** → `trolling_bird_body_left.stl`
 - **export_body_right.scad** → `trolling_bird_body_right.stl`
 - **export_rotor.scad** → `trolling_bird_rotor.stl`
@@ -68,6 +69,7 @@ See **[STL Export Guide](STL_EXPORT_GUIDE.md)** for detailed instructions.
 ```bash
 openscad -o trolling_bird_nose_left.stl export_nose_left.scad
 openscad -o trolling_bird_nose_right.stl export_nose_right.scad
+openscad -o trolling_bird_retaining_collar.stl export_retaining_collar.scad
 openscad -o trolling_bird_body_left.stl export_body_left.scad
 openscad -o trolling_bird_body_right.stl export_body_right.scad
 openscad -o trolling_bird_rotor.stl export_rotor.scad
@@ -115,6 +117,8 @@ After editing, re-export all STL files for your custom design.
 | Overall Length | 177.8 | mm |
 | Body Length | 114.3 | mm |
 | Nose Length | 63.5 | mm |
+| Nose Cone Length | 17.78 | mm |
+| Nose Cone Base Diameter | 24.13 | mm |
 | Front Diameter | 43.688 | mm |
 | Max Diameter | 50.8 | mm |
 | Tail Diameter | 7.112 | mm |
@@ -234,7 +238,7 @@ Found a bug or have an improvement? Please open an issue or submit a pull reques
 
 ### v1.0 (Current)
 - ✅ Complete parametric design
-- ✅ 6 printable parts (nose, body, rotor, shaft)
+- ✅ 7 printable parts (nose halves + retaining collar, body, rotor, shaft)
 - ✅ Internal structure (ribs, bosses, pins)
 - ✅ Full documentation and export guides
 

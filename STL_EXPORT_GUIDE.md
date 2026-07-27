@@ -12,6 +12,7 @@
 |------|-----------|----------|
 | `export_nose_left.scad` | Nose Left Half | ~8-12g PETG |
 | `export_nose_right.scad` | Nose Right Half | ~8-12g PETG |
+| `export_retaining_collar.scad` | Retaining Collar | ~2-4g PETG |
 | `export_body_left.scad` | Body Left Half | ~25-35g PETG |
 | `export_body_right.scad` | Body Right Half | ~25-35g PETG |
 | `export_rotor.scad` | Rotor Assembly | ~8-12g PETG |
@@ -32,6 +33,7 @@
 ```
 export_nose_left.scad      → trolling_bird_nose_left.stl
 export_nose_right.scad     → trolling_bird_nose_right.stl
+export_retaining_collar.scad → trolling_bird_retaining_collar.stl
 export_body_left.scad      → trolling_bird_body_left.stl
 export_body_right.scad     → trolling_bird_body_right.stl
 export_rotor.scad          → trolling_bird_rotor.stl
@@ -44,6 +46,7 @@ export_shaft.scad          → trolling_bird_shaft.stl
 # Windows
 openscad -o trolling_bird_nose_left.stl export_nose_left.scad
 openscad -o trolling_bird_nose_right.stl export_nose_right.scad
+openscad -o trolling_bird_retaining_collar.stl export_retaining_collar.scad
 openscad -o trolling_bird_body_left.stl export_body_left.scad
 openscad -o trolling_bird_body_right.stl export_body_right.scad
 openscad -o trolling_bird_rotor.stl export_rotor.scad
@@ -52,6 +55,7 @@ openscad -o trolling_bird_shaft.stl export_shaft.scad
 # Mac/Linux
 openscad -o trolling_bird_nose_left.stl export_nose_left.scad
 openscad -o trolling_bird_nose_right.stl export_nose_right.scad
+openscad -o trolling_bird_retaining_collar.stl export_retaining_collar.scad
 openscad -o trolling_bird_body_left.stl export_body_left.scad
 openscad -o trolling_bird_body_right.stl export_body_right.scad
 openscad -o trolling_bird_rotor.stl export_rotor.scad
@@ -76,28 +80,35 @@ openscad -o trolling_bird_shaft.stl export_shaft.scad
 - **Material**: ~8-12g PETG
 - **Supports**: YES - Required for blade
 
-### Part 3: Body Left Half
+### Part 3: Retaining Collar
+- **File**: `trolling_bird_retaining_collar.stl`
+- **Qty**: 1
+- **Print Time**: ~30-60 minutes
+- **Material**: ~2-4g PETG
+- **Supports**: NO
+
+### Part 4: Body Left Half
 - **File**: `trolling_bird_body_left.stl`
 - **Qty**: 1
 - **Print Time**: ~8-12 hours
 - **Material**: ~25-35g PETG
 - **Supports**: YES - Required for bosses and ribs
 
-### Part 4: Body Right Half
+### Part 5: Body Right Half
 - **File**: `trolling_bird_body_right.stl`
 - **Qty**: 1
 - **Print Time**: ~8-12 hours
 - **Material**: ~25-35g PETG
 - **Supports**: YES - Required for bosses and ribs
 
-### Part 5: Rotor Assembly
+### Part 6: Rotor Assembly
 - **File**: `trolling_bird_rotor.stl`
 - **Qty**: 1
 - **Print Time**: ~2-4 hours
 - **Material**: ~8-12g PETG
 - **Supports**: YES - Tree supports recommended for blade tips
 
-### Part 6: Shaft
+### Part 7: Shaft
 - **File**: `trolling_bird_shaft.stl`
 - **Qty**: 1
 - **Print Time**: ~1-2 hours
@@ -376,6 +387,7 @@ rotate([0,-18,25])  // Y and Z rotation
 |------|----------|
 | `export_nose_left.scad` | Nose left half STL |
 | `export_nose_right.scad` | Nose right half STL |
+| `export_retaining_collar.scad` | Retaining collar STL |
 | `export_body_left.scad` | Body left half STL |
 | `export_body_right.scad` | Body right half STL |
 | `export_rotor.scad` | Rotor assembly STL |
@@ -391,11 +403,12 @@ rotate([0,-18,25])  // Y and Z rotation
 |------|------|----------|
 | Nose Left | 4-6 hrs | 10g |
 | Nose Right | 4-6 hrs | 10g |
+| Retaining Collar | 0.5-1 hrs | 3g |
 | Body Left | 8-12 hrs | 30g |
 | Body Right | 8-12 hrs | 30g |
 | Rotor | 2-4 hrs | 10g |
 | Shaft | 1-2 hrs | 6g |
-| **TOTAL** | **~27-42 hours** | **~96g (3.4 oz)** |
+| **TOTAL** | **~27.5-43 hours** | **~99g (3.5 oz)** |
 
 ---
 
@@ -403,7 +416,7 @@ rotate([0,-18,25])  // Y and Z rotation
 
 1. **Download & Install OpenSCAD** - https://openscad.org/
 2. **Clone or download this repository**
-3. **Export all 6 STL files** using the methods above
+3. **Export all 7 STL files** using the methods above
 4. **Slice in your favorite slicer** (Cura, PrusaSlicer, etc.)
 5. **Print all parts** - Start with the shaft (quickest)
 6. **Assemble following the guide above**
