@@ -278,9 +278,9 @@ If using threaded inserts:
 ### Adjust Spin Speed
 Edit `Bird_Config.scad`:
 ```scad
-blade_pitch = 28;  // Default
-// Increase to 35-40 for faster spin
-// Decrease to 20-25 for slower, steadier spin
+blade_twist = 35;  // Default
+// Increase for faster spin
+// Decrease for slower, steadier spin
 ```
 
 ### Adjust Diving Depth
@@ -293,10 +293,10 @@ ballast_length = 60;     // Default
 
 ### Adjust Aggressiveness
 ```scad
-blade_span = 62;  // Default
-blade_width = 18; // Default
+blade_length = 31.75; // Default
+blade_width = 20.83;  // Default
 // Increase blade_width for more vibration
-// Increase blade_span for wider displacement
+// Increase blade_length for wider displacement
 ```
 
 ---

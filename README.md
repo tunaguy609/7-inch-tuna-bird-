@@ -94,10 +94,11 @@ All dimensions are controlled by parameters in **Bird_Config.scad**:
 
 ```scad
 // Spin characteristics
-blade_pitch = 28;        // Rotation angle (increase for faster spin)
+blade_twist = 35;        // Blade twist angle
+blade_sweep = 60;        // Blade sweep angle
 blade_count = 2;         // Number of blades (2, 3, or 4)
-blade_span = 62;         // Blade length in mm
-blade_width = 18;        // Blade width in mm
+blade_length = 31.75;    // Blade length in mm
+blade_width = 20.83;     // Blade width in mm
 
 // Weight & diving
 ballast_diameter = 18;   // Internal cavity size
@@ -105,7 +106,7 @@ ballast_length = 60;     // Internal cavity length
 
 // Durability
 wall = 2.8;              // Wall thickness in mm
-blade_thickness = 3.2;   // Blade thickness in mm
+blade_thickness = 3.56;  // Blade thickness in mm
 ```
 
 After editing, re-export all STL files for your custom design.
@@ -169,10 +170,10 @@ For detailed step-by-step assembly, see **[STL Export Guide](STL_EXPORT_GUIDE.md
 
 ## Performance Tips
 
-- **Faster Spin**: Increase `blade_pitch` in config
+- **Faster Spin**: Increase `blade_twist` in config
 - **Deeper Diving**: Add more ballast weight
 - **More Vibration**: Increase `blade_width` or `blade_count`
-- **Smoother Action**: Use smaller blade pitch angles
+- **Smoother Action**: Use smaller blade twist angles
 
 ## Troubleshooting
 

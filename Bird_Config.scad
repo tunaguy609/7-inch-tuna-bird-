@@ -72,13 +72,23 @@ ballast_length = 60;
 
 blade_count = 2;
 
-blade_span = 62;
+hub_length = 11.43;        // 0.45"
+hub_diameter = 26.67;      // 1.05"
 
-blade_width = 18;
+blade_length = 31.75;      // 1.25"
+blade_width = 20.83;       // 0.82"
 
-blade_thickness = 3.2;
+blade_thickness = 3.56;    // 0.14"
 
-blade_pitch = 28;
+blade_twist = 35;
+blade_sweep = 60;
+
+blade_pocket_depth = 4.0;
+blade_root_overlap = 3.8;
+
+// Legacy aliases used by nose blade geometry
+blade_span = blade_length;
+blade_pitch = blade_twist;
 
 //----------------------------
 // Nose Bearing
