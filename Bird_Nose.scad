@@ -29,14 +29,27 @@ module retaining_collar(){
     difference(){
 
         cylinder(
-            d=nose_cone_base_diameter + (collar_wall*2),
+            d=collar_od,
             h=collar_length,
             center=false);
 
         translate([0,0,-1])
             cylinder(
-                d=nose_cone_base_diameter + fit,
+                d=collar_id,
                 h=collar_length+2,
+                center=false);
+
+        cylinder(
+            d1=collar_id + (collar_chamfer*2),
+            d2=collar_id,
+            h=collar_chamfer,
+            center=false);
+
+        translate([0,0,collar_length-collar_chamfer])
+            cylinder(
+                d1=collar_id,
+                d2=collar_id + (collar_chamfer*2),
+                h=collar_chamfer,
                 center=false);
 
     }

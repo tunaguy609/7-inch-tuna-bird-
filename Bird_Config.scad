@@ -124,5 +124,7 @@ fit = 0.10;
 // Retaining Collar
 //----------------------------
 
-collar_length = 6.0;
-collar_wall = 2.0;
+collar_length = 11.43;     // 0.45"
+collar_od = 18.796;        // 0.74"
+collar_id = 6.35;          // 0.25"
+collar_chamfer = 0.762;    // 0.03"
