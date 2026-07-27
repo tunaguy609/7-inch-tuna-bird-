@@ -10,21 +10,19 @@ module body_profile(){
     hull(){
 
         translate([0,0,0])
-            scale([1.0,1.0,1.15])
-                sphere(d=max_diameter);
+                sphere(d=front_diameter);
 
         translate([body_length*0.25,0,0])
-            scale([1.15,1.0,1.0])
+                sphere(d=(front_diameter+max_diameter)/2);
+
+        translate([body_length*0.5,0,0])
                 sphere(d=max_diameter);
 
-        translate([body_length*0.55,0,0])
-            sphere(d=max_diameter*0.82);
-
-        translate([body_length*0.82,0,0])
-            sphere(d=max_diameter*0.42);
+        translate([body_length*0.75,0,0])
+                sphere(d=(max_diameter+tail_diameter)/2);
 
         translate([body_length,0,0])
-            sphere(d=tail_diameter);
+                sphere(d=tail_diameter);
     }
 
 }

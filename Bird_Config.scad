@@ -15,7 +15,8 @@ body_length    = 114.3;
 nose_length    = 63.5;
 
 max_diameter   = 50.8;
-tail_diameter  = 8.0;
+front_diameter = 43.688; // 1.72"
+tail_diameter  = 7.112;  // 0.28"
 nose_tip       = 8.0;
 
 //----------------------------

@@ -115,7 +115,9 @@ After editing, re-export all STL files for your custom design.
 | Overall Length | 177.8 | mm |
 | Body Length | 114.3 | mm |
 | Nose Length | 63.5 | mm |
+| Front Diameter | 43.688 | mm |
 | Max Diameter | 50.8 | mm |
+| Tail Diameter | 7.112 | mm |
 | Wall Thickness | 2.8 | mm |
 | Blade Pitch | 28 | degrees |
 | Blade Count | 2 | quantity |
